@@ -1,8 +1,11 @@
-package de.tk.decoupledui;
+package de.tk.decoupledui.wicket;
 
 import org.apache.wicket.util.tester.WicketTester;
 import org.junit.Before;
 import org.junit.Test;
+
+import de.tk.decoupledui.wicket.HomePage;
+import de.tk.decoupledui.wicket.WicketApplication;
 
 /**
  * Simple test using the WicketTester

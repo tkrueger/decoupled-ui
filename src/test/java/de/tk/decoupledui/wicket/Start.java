@@ -1,4 +1,4 @@
-package de.tk.decoupledui;
+package de.tk.decoupledui.wicket;
 
 import org.apache.wicket.util.time.Duration;
 import org.eclipse.jetty.http.ssl.SslContextFactory;
