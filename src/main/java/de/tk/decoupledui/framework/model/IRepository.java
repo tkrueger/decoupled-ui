@@ -1,6 +1,8 @@
 package de.tk.decoupledui.framework.model;
 
-public interface IRepository {
+import de.tk.decoupledui.framework.Boundary;
+
+public interface IRepository extends Boundary {
 
 	<T extends IEntity> void add(T instance);
 
