@@ -1,7 +1,7 @@
 package de.tk.decoupledui.wicket.pages.basket;
 
 import de.tk.decoupledui.wicket.PresentationModel;
-import de.tk.decoupledui.wicket.views.BasketViewPresentation;
+import de.tk.decoupledui.wicket.views.basket.BasketViewPresentation;
 
 public class ShowBasketPresentation implements PresentationModel {
 

@@ -3,6 +3,7 @@ package de.tk.decoupledui.wicket.views;
 import de.tk.decoupledui.wicket.PresentationModel;
 
 class BuyableProductPresentation implements PresentationModel {
+	private static final long serialVersionUID = 1L;
 	private String product;
 	private long id;
 

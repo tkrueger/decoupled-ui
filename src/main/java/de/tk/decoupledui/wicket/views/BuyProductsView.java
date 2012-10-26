@@ -3,25 +3,37 @@ package de.tk.decoupledui.wicket.views;
 import org.apache.wicket.markup.html.panel.Panel;
 import org.apache.wicket.markup.repeater.RepeatingView;
 import org.apache.wicket.model.IModel;
+import org.apache.wicket.model.Model;
 
-public class BuyProductsView extends Panel {
+import de.tk.decoupledui.wicket.views.BuyProductsPresentation.IBuyableProductsView;
 
-	public BuyProductsView(String id, IModel<BuyProducsPresentation> model) {
+public class BuyProductsView extends Panel implements IBuyableProductsView {
+
+	private static final long serialVersionUID = 1L;
+	private RepeatingView buyableProducts;
+
+	public BuyProductsView(String id, IModel<BuyProductsPresentation> model) {
 		super(id, model);
 	}
 
 	@Override
 	protected void onInitialize() {
 		super.onInitialize();
-		
-		RepeatingView buyable = new RepeatingView("buyable");
-		for (BuyableProductPresentation product : getPresentation().getProducts()) {
-			BuyableItemView view = new BuyableItemView(buyable.newChildId(), Model.of(product));
-		}
+
+		buyableProducts = new RepeatingView("buyable");
+		add(buyableProducts);
+
+		getPresentation().initializeView(this);
 	}
 
-	private BuyProducsPresentation getPresentation() {
-		return (BuyProducsPresentation) getDefaultModelObject();
+	@Override
+	public void addProduct(BuyableProductPresentation product) {
+		BuyableItemView view = new BuyableItemView(buyableProducts.newChildId(), Model.of(product));
+		buyableProducts.add(view);
+	}
+
+	private BuyProductsPresentation getPresentation() {
+		return (BuyProductsPresentation) getDefaultModelObject();
 	}
 
 }
