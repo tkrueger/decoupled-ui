@@ -1,9 +1,9 @@
 package de.tk.decoupledui.interactions;
 
+import de.tk.decoupledui.domain.Basket;
+import de.tk.decoupledui.domain.Product;
+import de.tk.decoupledui.framework.domain.IRepository;
 import de.tk.decoupledui.framework.interactions.Interactor;
-import de.tk.decoupledui.framework.model.IRepository;
-import de.tk.decoupledui.model.Basket;
-import de.tk.decoupledui.model.Product;
 
 public class AddItemToBasket implements Interactor<AddItemToBasketRequest, AddItemToBasketResponse> {
 

@@ -1,14 +1,15 @@
-package de.tk.decoupledui.model;
+package de.tk.decoupledui.domain;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-import de.tk.decoupledui.framework.model.Entity;
-import de.tk.decoupledui.framework.model.Id;
+import de.tk.decoupledui.framework.domain.Entity;
+import de.tk.decoupledui.framework.domain.Id;
 
 public class Basket extends Entity {
 
-	private List<Product> products = new LinkedList<Product>();
+	private List<Id> products = new LinkedList<Id>();
 
 	public Basket() {
 		super();
@@ -23,15 +24,19 @@ public class Basket extends Entity {
 	}
 
 	public void add(Product product) {
-		products.add(product);
+		products.add(product.getId());
 	}
 
 	public boolean contains(Product product) {
-		return products.contains(product);
+		return products.contains(product.getId());
 	}
 
 	public int getSize() {
 		return products.size();
+	}
+	
+	public List<Id> getProducts() {
+		return Collections.unmodifiableList(products);
 	}
 
 }

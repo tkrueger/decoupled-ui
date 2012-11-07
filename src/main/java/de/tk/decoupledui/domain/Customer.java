@@ -1,7 +1,7 @@
-package de.tk.decoupledui.model;
+package de.tk.decoupledui.domain;
 
-import de.tk.decoupledui.framework.model.Entity;
-import de.tk.decoupledui.framework.model.Id;
+import de.tk.decoupledui.framework.domain.Entity;
+import de.tk.decoupledui.framework.domain.Id;
 
 public class Customer extends Entity {
 

@@ -5,8 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import de.tk.decoupledui.framework.model.Entity;
-import de.tk.decoupledui.framework.model.Id;
+import de.tk.decoupledui.framework.domain.Entity;
+import de.tk.decoupledui.framework.domain.Id;
 
 
 

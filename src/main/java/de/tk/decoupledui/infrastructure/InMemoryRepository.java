@@ -4,9 +4,9 @@ import java.util.HashMap;
 
 import com.google.common.collect.Maps;
 
-import de.tk.decoupledui.framework.model.IEntity;
-import de.tk.decoupledui.framework.model.IRepository;
-import de.tk.decoupledui.framework.model.Id;
+import de.tk.decoupledui.framework.domain.IEntity;
+import de.tk.decoupledui.framework.domain.IRepository;
+import de.tk.decoupledui.framework.domain.Id;
 
 public class InMemoryRepository implements IRepository {
 

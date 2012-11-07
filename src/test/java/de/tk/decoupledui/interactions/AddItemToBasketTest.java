@@ -6,9 +6,9 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+import de.tk.decoupledui.domain.Basket;
+import de.tk.decoupledui.domain.Product;
 import de.tk.decoupledui.infrastructure.InMemoryRepository;
-import de.tk.decoupledui.model.Basket;
-import de.tk.decoupledui.model.Product;
 
 public class AddItemToBasketTest {
 

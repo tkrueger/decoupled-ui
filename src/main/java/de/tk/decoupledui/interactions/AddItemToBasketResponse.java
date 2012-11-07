@@ -1,8 +1,8 @@
 package de.tk.decoupledui.interactions;
 
+import de.tk.decoupledui.domain.Basket;
+import de.tk.decoupledui.domain.Product;
 import de.tk.decoupledui.framework.interactions.Response;
-import de.tk.decoupledui.model.Basket;
-import de.tk.decoupledui.model.Product;
 
 // TODO this looks suspiciously like an Event
 public final class AddItemToBasketResponse implements Response {

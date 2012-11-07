@@ -1,7 +1,7 @@
 package de.tk.decoupledui.interactions;
 
+import de.tk.decoupledui.framework.domain.Id;
 import de.tk.decoupledui.framework.interactions.Request;
-import de.tk.decoupledui.framework.model.Id;
 
 public final class AddItemToBasketRequest implements Request {
 	private final Id basket;

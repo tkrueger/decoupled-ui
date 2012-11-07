@@ -1,8 +1,11 @@
-package de.tk.decoupledui.model;
+package de.tk.decoupledui.domain;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import de.tk.decoupledui.domain.Basket;
+import de.tk.decoupledui.domain.Product;
 
 public class BasketTest {
 

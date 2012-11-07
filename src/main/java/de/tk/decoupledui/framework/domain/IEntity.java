@@ -1,4 +1,4 @@
-package de.tk.decoupledui.framework.model;
+package de.tk.decoupledui.framework.domain;
 
 
 public interface IEntity {

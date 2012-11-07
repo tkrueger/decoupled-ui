@@ -1,7 +1,7 @@
 package de.tk.decoupledui.interactions;
 
+import de.tk.decoupledui.domain.Basket;
 import de.tk.decoupledui.framework.interactions.Response;
-import de.tk.decoupledui.model.Basket;
 
 public class ShowBasketResponse implements Response {
 
